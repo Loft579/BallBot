@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os #!
 
-discord.opus.load_opus() #!
+discord.opus.load_opus('opus') #!
 
 client = discord.Client()
 bot = commands.Bot(command_prefix = "p")
@@ -16,7 +16,6 @@ async def on_ready():
 @bot.command()
 async def ing(ctx, *args):
     await ctx.author.voice.channel.connect()
-
 
 
 
