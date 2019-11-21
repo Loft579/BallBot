@@ -4,6 +4,8 @@ from discord.ext.commands import Bot
 import asyncio
 import os #!
 
+discord.opus.load_opus() #!
+
 client = discord.Client()
 bot = commands.Bot(command_prefix = "p")
 
