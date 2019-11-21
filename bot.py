@@ -15,5 +15,5 @@ async def on_ready():
 async def nothing(ctx, *args):
     pass
 
-TOKEN = os.environ.get('BOT_TOKEN')
+TOKEN = os.environ['BOT_TOKEN']
 bot.run(TOKEN)
